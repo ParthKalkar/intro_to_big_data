@@ -1,5 +1,6 @@
 Q1. What will happen if you will start the vagrant machine without $vagrant init. Why?
-Ans - 1. if you have a Vagrant file then everything will be okay
+Ans - 
+1. if you have a Vagrant file then everything will be okay
 2. if you do not have Vagrant file then an error will occur
 
 Q2. To bring up the Vagrant virtual environment, you can use $vagrant up. What will happen after the command?
