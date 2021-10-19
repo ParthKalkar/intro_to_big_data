@@ -17,13 +17,17 @@ Ans - virtualbox, hyper-v etc. -- those programs that do virtualization
 Q6. What is Provisioner in Vagrant?
 Ans - scripts that allow you to specify additional instructions to run inside vms
 
-What is Vagrantfile?
-file with main settings of how to create a vm
-What are Synced Folders in Vagrant?
-folders that are common between host and guest systems
-What is Multi-Machine environment in Vagrant?
-when you create and run multiple vms simultaneously 
-How do you define multiple machines in Vagrant?
+Q7. What is Vagrantfile?
+Ans - file with main settings of how to create a vm
+
+Q8. What are Synced Folders in Vagrant?
+Ans - folders that are common between host and guest systems
+
+Q9. What is Multi-Machine environment in Vagrant?
+Ans - when you create and run multiple vms simultaneously 
+
+Q10. How do you define multiple machines in Vagrant?
+Ans - 
 Vagrant.configure("2") do |config|
   config.vm.define "master" do |subconfig|
     subconfig.vm.box = BOX_IMAGE
@@ -31,25 +35,32 @@ Vagrant.configure("2") do |config|
 config.vm.define "slave" do |subconfig|
     subconfig.vm.box = BOX_IMAGE
   end
-
-
 end
-What does vagrant push do?
-you can push code to remote location
-What does vagrant box list do?
-lists installed boxes
-What does vagrant box outdated do?
-checks for updates for installed boxes, shouts at you if some of them are outdated
-What does vagrant box prune do?
-deletes outdated boxes
-What does vagrant box remove do?
-removes specific box
-What does vagrant box repackage do?
-creates a box file that you can distribute
-What does vagrant box update do?
-updates a box
-What does vagrant connect do?
-allows you to connect to a remote instance of vagrant
-What does vagrant destroy do?
-destroys vm
+
+Q11. What does vagrant push do?
+Ans - you can push code to remote location
+
+Q12. What does vagrant box list do?
+Ans - lists installed boxes
+
+Q13. What does vagrant box outdated do?
+Ans - checks for updates for installed boxes, shouts at you if some of them are outdated
+
+Q14. What does vagrant box prune do?
+Ans - deletes outdated boxes
+
+Q15. What does vagrant box remove do?
+Ans - removes specific box
+
+Q16. What does vagrant box repackage do?
+Ans - creates a box file that you can distribute
+
+Q17. What does vagrant box update do?
+Ans - updates a box
+
+Q18. What does vagrant connect do?
+Ans - allows you to connect to a remote instance of vagrant
+
+Q19. What does vagrant destroy do?
+Ans - destroys vm
 
