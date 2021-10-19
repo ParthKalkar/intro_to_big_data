@@ -1,0 +1,49 @@
+What will happen if you will start the vagrant machine without $vagrant init. Why?
+if you have a Vagrant file you will most likely be ok
+if you do not have Vagrant file you will get an error
+To bring up the Vagrant virtual environment, you can use $vagrant up. What will happen after the command?
+vagrant will build a vm according to instructions in Vagrantfile
+How do you access (login into) virtual machine created with vagrant?
+vagrant ssh <name_defined_in_vagrantfile_an_is_optional_for_single_machines>
+What is a BOX in Vagrant?
+template for vm
+What is Provider in Vagrant?
+virtualbox, hyper-v etc. -- those programs that do virtualization
+What is Provisioner in Vagrant?
+scripts that allow you to specify additional instructions to run inside vms
+What is Vagrantfile?
+file with main settings of how to create a vm
+What are Synced Folders in Vagrant?
+folders that are common between host and guest systems
+What is Multi-Machine environment in Vagrant?
+when you create and run multiple vms simultaneously 
+How do you define multiple machines in Vagrant?
+Vagrant.configure("2") do |config|
+  config.vm.define "master" do |subconfig|
+    subconfig.vm.box = BOX_IMAGE
+  end
+config.vm.define "slave" do |subconfig|
+    subconfig.vm.box = BOX_IMAGE
+  end
+
+
+end
+What does vagrant push do?
+you can push code to remote location
+What does vagrant box list do?
+lists installed boxes
+What does vagrant box outdated do?
+checks for updates for installed boxes, shouts at you if some of them are outdated
+What does vagrant box prune do?
+deletes outdated boxes
+What does vagrant box remove do?
+removes specific box
+What does vagrant box repackage do?
+creates a box file that you can distribute
+What does vagrant box update do?
+updates a box
+What does vagrant connect do?
+allows you to connect to a remote instance of vagrant
+What does vagrant destroy do?
+destroys vm
+
