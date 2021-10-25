@@ -1,0 +1,18 @@
+Is this statement correct: You can’t create multiple containers from the same image? - False
+Is this statement correct: All containers running on a single machine share the same operating system kernel, so they start instantly and make more efficient use of RAM. - True
+Is this statement correct: Containers include the application and all of its dependencies, but share the kernel with other containers. They run as an isolated process in userspace on the host operating system. They’re also not tied to any specific infrastructure – Docker containers run on any computer, on any infrastructure, and in any cloud. - True
+Fill in a blank: DOCKER HUB is a cloud-hosted service from Docker that provides registry capabilities for public and private content
+Fill in a blank: COMPOSE is a tool for defining and running multi-container Docker applications.
+Fill in a blank: DOCKER SWARM is native clustering for Docker. It turns a pool of Docker hosts into a single, virtual Docker host.
+Fill in a blank: DOCKERFILE is a text document that contains all the commands a user could call on the command line to assemble an image
+Explain Docker command: docker exec -it container_id bash - “shell” into a running container
+Explain Docker command: docker build -t my_user/repo_name:1.0 - using the Dockerfile in the local directory, and if you use docker 1.5 you can specify a Dockerfile elsewhere.
+Explain Docker command: docker commit -m "My first update" container_ID user_name/repository_name - committing the docker container
+Explain Docker command: docker push user_name/repository_name - command that is used to push or share a local Docker image or a repository to a central repository; it might be a public registry like https://hub.docker.com or a private registry or a self-hosted registry.
+Explain Docker command: docker ps - docker ps is lists all running containers in docker engine.
+Explain Docker command: docker images - The default docker images will show all top level images, their repository and tags, and their size.
+Explain Docker command: docker ps -a -  When we run docker ps -a it will list the container that had stop as well.
+Which command runs a Docker container? - The docker exec command runs a new command in a running container. T
+Which command stops Docker a container? - docker rm -f
+Which command deletes a Docker container? - docker stop <Container_ID> docker rm <Container_ID>/Optional: Run the following command to remove the container forcefully: docker rm -f < Container_ID>
+Which command deletes a Docker image? - docker rmi 
