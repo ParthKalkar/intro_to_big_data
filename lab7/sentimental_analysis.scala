@@ -69,7 +69,6 @@ object MainClass{
             .setFeaturesCol("tfidfFeatures")
             .setLabelCol("Sentiment")
 
-
         // pipeline example
         val pipe = new Pipeline()
         .setStages(Array(
