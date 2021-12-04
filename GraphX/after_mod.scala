@@ -1,4 +1,5 @@
 import org.apache.spark.graphx._
+
 val myVertices = sc.makeRDD(Array(
     (1L, "Ann"),
     (2L, "Bill"),
@@ -17,4 +18,5 @@ val myEdges = sc.makeRDD(Array(
 ))
 
 val myGraph = Graph(myVertices, myEdges)
+
 myGraph.pageRank(0.001).vertices.foreach(println)
