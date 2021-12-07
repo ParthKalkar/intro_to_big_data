@@ -1,5 +1,5 @@
 # intro_to_big_data
-Labs and Assignment of the introduction to big data course, fall 2021, Innopolis University
+Labs tasks solved during the _Introduction to Big Data_ course, fall 2021, Innopolis University
 
 ## Week1
 Lab1 - Vagrant, Lab_file: https://hackmd.io/@BigDataInnopolis/H16djdqrr, Lab_video: https://www.youtube.com/watch?v=N00k-21noZI&list=PLcv13aCxIfjDY1qv79zgCHRUZuh0_7tA7&index=3
